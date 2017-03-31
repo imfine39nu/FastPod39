@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		1DFF3B4E1E8DF070004094DC /* FastPod39.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFF3B4C1E8DF070004094DC /* FastPod39.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DFF3B551E8DF420004094DC /* FastPod39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF3B541E8DF420004094DC /* FastPod39.swift */; };
+		1DFF3B5D1E8DF4E0004094DC /* FastPod39Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF3B5C1E8DF4E0004094DC /* FastPod39Tests.swift */; };
+		1DFF3B5F1E8DF4E0004094DC /* FastPod39.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFF3B491E8DF070004094DC /* FastPod39.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DFF3B601E8DF4E0004094DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DFF3B401E8DF070004094DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DFF3B481E8DF070004094DC;
+			remoteInfo = FastPod39;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1DFF3B491E8DF070004094DC /* FastPod39.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastPod39.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFF3B4C1E8DF070004094DC /* FastPod39.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastPod39.h; sourceTree = "<group>"; };
 		1DFF3B4D1E8DF070004094DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFF3B541E8DF420004094DC /* FastPod39.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastPod39.swift; sourceTree = "<group>"; };
+		1DFF3B5A1E8DF4E0004094DC /* FastPod39Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastPod39Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFF3B5C1E8DF4E0004094DC /* FastPod39Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastPod39Tests.swift; sourceTree = "<group>"; };
+		1DFF3B5E1E8DF4E0004094DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DFF3B571E8DF4E0004094DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFF3B5F1E8DF4E0004094DC /* FastPod39.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1DFF3B4B1E8DF070004094DC /* FastPod39 */,
+				1DFF3B5B1E8DF4E0004094DC /* FastPod39Tests */,
 				1DFF3B4A1E8DF070004094DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1DFF3B491E8DF070004094DC /* FastPod39.framework */,
+				1DFF3B5A1E8DF4E0004094DC /* FastPod39Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				1DFF3B4C1E8DF070004094DC /* FastPod39.h */,
 				1DFF3B4D1E8DF070004094DC /* Info.plist */,
+				1DFF3B541E8DF420004094DC /* FastPod39.swift */,
 			);
 			path = FastPod39;
+			sourceTree = "<group>";
+		};
+		1DFF3B5B1E8DF4E0004094DC /* FastPod39Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1DFF3B5C1E8DF4E0004094DC /* FastPod39Tests.swift */,
+				1DFF3B5E1E8DF4E0004094DC /* Info.plist */,
+			);
+			path = FastPod39Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,40 @@
 			productReference = 1DFF3B491E8DF070004094DC /* FastPod39.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1DFF3B591E8DF4E0004094DC /* FastPod39Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DFF3B621E8DF4E0004094DC /* Build configuration list for PBXNativeTarget "FastPod39Tests" */;
+			buildPhases = (
+				1DFF3B561E8DF4E0004094DC /* Sources */,
+				1DFF3B571E8DF4E0004094DC /* Frameworks */,
+				1DFF3B581E8DF4E0004094DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DFF3B611E8DF4E0004094DC /* PBXTargetDependency */,
+			);
+			name = FastPod39Tests;
+			productName = FastPod39Tests;
+			productReference = 1DFF3B5A1E8DF4E0004094DC /* FastPod39Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1DFF3B401E8DF070004094DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "JEONGIN HWANG";
 				TargetAttributes = {
 					1DFF3B481E8DF070004094DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					1DFF3B591E8DF4E0004094DC = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				1DFF3B481E8DF070004094DC /* FastPod39 */,
+				1DFF3B591E8DF4E0004094DC /* FastPod39Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1DFF3B471E8DF070004094DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DFF3B581E8DF4E0004094DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +200,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFF3B551E8DF420004094DC /* FastPod39.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DFF3B561E8DF4E0004094DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFF3B5D1E8DF4E0004094DC /* FastPod39Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DFF3B611E8DF4E0004094DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DFF3B481E8DF070004094DC /* FastPod39 */;
+			targetProxy = 1DFF3B601E8DF4E0004094DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DFF3B4F1E8DF070004094DC /* Debug */ = {
@@ -239,6 +325,27 @@
 		1DFF3B521E8DF070004094DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FastPod39/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hji.FastPod39;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1DFF3B531E8DF070004094DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,22 +359,26 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		1DFF3B531E8DF070004094DC /* Release */ = {
+		1DFF3B631E8DF4E0004094DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FastPod39/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = FastPod39Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hji.FastPod39;
+				PRODUCT_BUNDLE_IDENTIFIER = hji.FastPod39Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1DFF3B641E8DF4E0004094DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastPod39Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hji.FastPod39Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +400,14 @@
 			buildConfigurations = (
 				1DFF3B521E8DF070004094DC /* Debug */,
 				1DFF3B531E8DF070004094DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1DFF3B621E8DF4E0004094DC /* Build configuration list for PBXNativeTarget "FastPod39Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DFF3B631E8DF4E0004094DC /* Debug */,
+				1DFF3B641E8DF4E0004094DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
